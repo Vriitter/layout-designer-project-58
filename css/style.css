@@ -20,7 +20,7 @@ body {
    color: var(--dark-color)
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
    line-height:  1.2em;
    font-family: Neucha, cursive;
    font-weight: 400;
@@ -37,7 +37,23 @@ h2 {
 }
 
 h3 {
+   font-size: 52px;
+}
+
+h4 {
    font-size: 34px;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   display: block;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
 }
 
 .container {
@@ -150,4 +166,56 @@ section,
 .navigation {
    margin-top: 377px;
    background-color:#2a2626;
+}
+
+.navigation-list {
+   display: flex;
+   gap: 20px 30px;
+   flex-wrap: wrap;
+   margin-top: 100px;
+}
+
+.navigation-title {
+   margin: 0;
+   color: var(--main-color);
+}
+
+.navigation-title span {
+   color: var(--white-color);
+}
+
+.navigation-item.first-item {
+   padding: 0;
+   background-color: transparent;
+}
+
+.navigation-item {
+   box-sizing: border-box;
+   width: 350px;
+   max-height: 348px;
+   padding: 24px;
+   background-color: var(--light-color);
+}
+
+.navigation-item-number {
+   display: block;
+   font-family: Neucha, cursive;
+   font-weight: 400;
+   font-size: 64px;
+   color: var(--main-dark-color);
+   margin: 24px 0 56px;
+}
+
+.navigation-item-title {
+   margin: 0 0 11px;
+   color: var(--main-color);
+}
+
+.ahother-margin {
+   margin-bottom: 9px;
+}
+
+.navigation-item-text {
+   color: var(--main-dark-color);
+   margin: 0;
 }
