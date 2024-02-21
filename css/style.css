@@ -11,6 +11,7 @@
 }
 
 body {
+   margin: 0;
    box-sizing: border-box;
    font-family: "Open Sans", sans-serif;
    font-weight: 400;
@@ -25,6 +26,10 @@ h1, h2, h3 {
 
 h1 {
    font-size: 72px;
+   margin: 7px 0 191px;
+   color: var(--main-color);
+   font-family: Neucha, cursive;
+   font-weight: 400;
 }
 
 h2 {
@@ -40,6 +45,69 @@ h3 {
    margin: 0 auto;
 }
 
-section {
+section,
+.header-inner {
    padding: 100px 0;
+}
+
+.header {
+   background-color: var(--light-color);
+   position: relative;
+   z-index: -3;
+}
+
+.header::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(../img/background.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: -2;
+}
+
+.header-inner {
+   position: relative;
+}
+
+.header-title span{
+   color: var(--dark-color);
+}
+
+.header-img {
+   position: absolute;
+   top: 55px;
+   left: 296px;
+   z-index: -1;
+}
+
+.header-columns {
+   column-count: 2;
+   column-width: 540px;
+   column-gap: 30px;
+}
+
+.header-text {
+   margin: 0 0 15px;
+}
+
+.header-text:first-child {
+   margin-bottom: 80px;
+}
+
+.header-btn {
+   border: none;
+   display: block;
+   margin-top: 40px;
+   padding: 12px 24px;
+   background-color: var(--main-color);
+
+   font-family: "Open Sans", sans-serif;
+   font-size: 16px;
+   color: var(--white-color);
+   font-weight: 700;
+   text-transform: uppercase;
 }
