@@ -22,14 +22,14 @@ body {
 
 h1, h2, h3 {
    line-height:  1.2em;
+   font-family: Neucha, cursive;
+   font-weight: 400;
 }
 
 h1 {
    font-size: 72px;
    margin: 7px 0 191px;
    color: var(--main-color);
-   font-family: Neucha, cursive;
-   font-weight: 400;
 }
 
 h2 {
@@ -103,7 +103,6 @@ section,
    border: none;
    display: block;
    margin-top: 40px;
-   /* padding: 12px 23px 11px 25px; */
    width: 148px;
    height: 49px;
    text-align: center;
@@ -115,4 +114,40 @@ section,
    color: var(--white-color);
    font-weight: 700;
    text-transform: uppercase;
+}
+
+.video {
+   text-align: center;
+}
+
+.video-title {
+   color: var(--dark-color);
+   margin: 0 0 27px;
+}
+
+.video-title span {
+   color: var(--main-color);
+}
+
+.video-text {
+   margin: 0 0 30px;
+}
+
+.video-container {
+   position: relative;
+}
+
+.videoplayer {
+   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+
+   position: absolute;
+   /* top: -100px; */
+   left: 50%;
+   transform: translate(-50%);
+   padding-bottom: 88px;
+}
+
+.navigation {
+   margin-top: 377px;
+   background-color:#2a2626;
 }
