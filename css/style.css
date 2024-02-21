@@ -66,6 +66,7 @@ section,
    background-image: url(../img/background.png);
    background-size: cover;
    background-repeat: no-repeat;
+   opacity: 0.06;
    z-index: -2;
 }
 
@@ -80,7 +81,7 @@ section,
 .header-img {
    position: absolute;
    top: 55px;
-   left: 296px;
+   left: 297px;
    z-index: -1;
 }
 
@@ -102,11 +103,15 @@ section,
    border: none;
    display: block;
    margin-top: 40px;
-   padding: 12px 24px;
+   /* padding: 12px 23px 11px 25px; */
+   width: 148px;
+   height: 49px;
+   text-align: center;
    background-color: var(--main-color);
 
    font-family: "Open Sans", sans-serif;
    font-size: 16px;
+   line-height: 160%;
    color: var(--white-color);
    font-weight: 700;
    text-transform: uppercase;
