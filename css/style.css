@@ -74,7 +74,8 @@ section,
 
 .header::before,
 .ikea-effect::before,
-.optimization::before {
+.optimization::before,
+.novelty::before {
    content: '';
    position: absolute;
    top: 0;
@@ -223,16 +224,14 @@ section,
    margin: 0;
 }
 
-.ikea-effect {
-   /* background-image: url(../img/ikea-bg.png); */
+.ikea-effect,
+.novelty {
    background-color: var(--light-color);
    position: relative;
    z-index: -3;
 }
 
 .optimization {
-   /* background-image: url(../img/optimization-bg.png);
-   background-repeat: no-repeat; */
    background-color: var(--brown-color);
    position: relative;
    z-index: -3;
