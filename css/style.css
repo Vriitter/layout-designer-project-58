@@ -76,7 +76,8 @@ section,
 .ikea-effect::before,
 .optimization::before,
 .novelty::before,
-.deplication::before {
+.deplication::before,
+.planning::before {
    content: '';
    position: absolute;
    top: 0;
@@ -225,7 +226,8 @@ section,
 }
 
 .ikea-effect,
-.novelty {
+.novelty,
+.planning {
    background-color: var(--light-color);
    position: relative;
    z-index: -3;
