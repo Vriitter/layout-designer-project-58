@@ -299,3 +299,96 @@ section,
    margin-top: 0;
    line-height: 157%;
 }
+
+.footer {
+   margin: 100px 0 111px;
+}
+
+.footer-inner {
+   background-color: var(--main-dark-color);
+   color: var(--white-color);
+   padding: 38px 55px 40px;
+   margin-bottom: 76px;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.footer-title {
+   margin: 0;
+}
+
+label {
+   font-size: 18px;
+   display: block;
+   margin: 0 0 11px;
+}
+
+form {
+   display: flex;
+   align-items: center;
+}
+
+.footer-email {
+   box-sizing: border-box;
+   height: 50px;
+   padding: 15px;
+   width: 422px;
+
+   border: none;
+   outline: none;
+}
+
+.footer-email::placeholder {
+   font-family: "Open Sans", sans-serif;
+   font-weight: 400;
+   font-size: 13px;
+   color: #757575;
+}
+
+.footer-btn {
+   border: none;
+   width: 62px;
+   height: 50px;
+   background-color: var(--main-color);
+   position: relative;
+   cursor: pointer;
+}
+
+.footer-btn::before{
+   content: url(../img/send.svg);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.footer-email-descr {
+   font-size: 12px;
+   margin: 0;
+}
+
+.footer-email-descr a,
+.footer-link a {
+   display: inline-block;
+   text-decoration: underline;
+}
+
+.footer-info {
+   text-align: center;
+   color: #000;
+   font-size: 14px;
+}
+
+.footer-copy {
+   margin: 0 0 10px;
+}
+
+.footer-link {
+   margin: 0 0 16px;
+}
+
+.footer-link a {
+   color: #1085C5;
+}
