@@ -20,7 +20,7 @@ body {
    color: var(--dark-color)
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
    line-height:  1.2em;
    font-family: Neucha, cursive;
    font-weight: 400;
@@ -101,7 +101,8 @@ section,
    z-index: -1;
 }
 
-.header-columns {
+.header-columns,
+.component-columns {
    column-count: 2;
    column-width: 540px;
    column-gap: 30px;
@@ -218,4 +219,56 @@ section,
 .navigation-item-text {
    color: var(--main-dark-color);
    margin: 0;
+}
+
+.ikea-effect {
+   background-image: url(../img/ikea-bg.png);
+   /* background-size: cover; */
+}
+
+.component-img {
+   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.15);
+   display: block;
+   margin-bottom: 100px;
+}
+
+.component-header {
+   display: flex;
+   gap: 30px;
+   color: var(--dark-color);
+}
+
+.component-suptitle {
+   color: var(--dark-semitransparent-color);
+   font-size: 24px;
+   margin: 0 0 4px;
+}
+
+.component-title {
+   margin: 0 0 28px;
+}
+
+.component-text {
+   margin: 0;
+   font-family: Neucha, cursive;
+   font-weight: 400;
+   line-height: 120%;
+   font-size: 34px;
+}
+
+.component-columns-title {
+   column-span: all;
+   display: block;
+   color: var(--white-color);
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 700;
+   padding: 0 10px;
+   background-color: var(--brown-color);
+   margin: 0 0 20px;
+}
+
+.component-columns-text {
+   margin-top: 0;
+   line-height: 157%;
 }
