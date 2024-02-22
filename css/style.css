@@ -223,7 +223,11 @@ section,
 
 .ikea-effect {
    background-image: url(../img/ikea-bg.png);
-   /* background-size: cover; */
+}
+
+.optimization {
+   background-image: url(../img/optimization-bg.png);
+   background-repeat: no-repeat;
 }
 
 .component-img {
@@ -242,6 +246,14 @@ section,
    color: var(--dark-semitransparent-color);
    font-size: 24px;
    margin: 0 0 4px;
+}
+
+.component-suptitle-dark-theme {
+   color: var(--white-semitransparent-color);
+}
+
+.dark-theme-color {
+   color: var(--white-color);
 }
 
 .component-title {
@@ -266,6 +278,11 @@ section,
    padding: 0 10px;
    background-color: var(--brown-color);
    margin: 0 0 20px;
+}
+
+.component-columns-title-dark-theme {
+   color: var(--brown-color);
+   background-color: var(--white-color);
 }
 
 .component-columns-text {
