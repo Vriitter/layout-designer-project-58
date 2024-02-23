@@ -139,12 +139,13 @@ section,
 }
 
 .video {
+   padding-top: 105px;
    text-align: center;
 }
 
 .video-title {
    color: var(--dark-color);
-   margin: 0 0 27px;
+   margin: 0 0 24px;
 }
 
 .video-title span {
@@ -165,11 +166,11 @@ section,
    position: absolute;
    left: 50%;
    transform: translate(-50%);
-   padding-bottom: 88px;
+   padding-bottom: 16px;
 }
 
 .navigation {
-   margin-top: 377px;
+   margin-top: 376px;
    background-color:#2a2626;
 }
 
@@ -181,7 +182,7 @@ section,
 }
 
 .navigation-title {
-   margin: 0;
+   margin: 4px 0 0;
    color: var(--main-color);
 }
 
@@ -208,7 +209,7 @@ section,
    font-weight: 400;
    font-size: 64px;
    color: var(--main-dark-color);
-   margin: 24px 0 56px;
+   margin: 25px 0 56px;
 }
 
 .navigation-item-title {
@@ -238,6 +239,22 @@ section,
    background-color: var(--brown-color);
    position: relative;
    z-index: -3;
+}
+
+.optimization {
+   padding-bottom: 84px;
+}
+
+.novelty{
+   padding-bottom: 96px;
+}
+
+.deplication {
+   padding-bottom: 96px;
+}
+
+.planning {
+   padding-bottom: 107px;
 }
 
 .component-img {
@@ -308,7 +325,7 @@ section,
    background-color: var(--main-dark-color);
    color: var(--white-color);
    padding: 38px 55px 40px;
-   margin-bottom: 76px;
+   margin-bottom: 73px;
 
    display: flex;
    align-items: center;
@@ -322,12 +339,16 @@ section,
 label {
    font-size: 18px;
    display: block;
-   margin: 0 0 11px;
+   margin: 2px 0 10px;
 }
 
 form {
    display: flex;
    align-items: center;
+}
+
+.footer-title {
+   margin-bottom: -10px;
 }
 
 .footer-email {
@@ -341,8 +362,8 @@ form {
 }
 
 .footer-email::placeholder {
-   font-family: "Open Sans", sans-serif;
-   font-weight: 400;
+   /* font-family: "Open Sans", sans-serif;
+   font-weight: 400; */
    font-size: 13px;
    color: #757575;
 }
@@ -382,13 +403,17 @@ form {
 }
 
 .footer-copy {
-   margin: 0 0 10px;
+   margin: 0 0 13px;
 }
 
 .footer-link {
-   margin: 0 0 16px;
+   margin: 0 0 14px;
 }
 
 .footer-link a {
    color: #1085C5;
+}
+
+.left-column {
+   width: 555px;
 }
