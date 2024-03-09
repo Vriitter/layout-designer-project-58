@@ -1,16 +1,138 @@
 :root {
-   --white-color: #fff;
-   --white-semitransparent-color: #d7ccc0;
-   --light-color: #f5f4f0;
-   --main-color: #fe8a02;
-   --main-dark-color: #42413c;
-   --dark-color: #2a2626;
-   --dark-semitransparent-color: #908d8b;
-   --brown-color: #b09a81;
-   --blue-color: #1085c5;
+   --white: #fff;
+   --light: #f5f4f0;
+   --primary: #fe8a02;
+   --primary-dark: #42413c;
+   --dark: #2a2626;
+   --dark-50: #908d8b;
+   --brown: #b09a81;
+   --white-50: #d7ccc0;
+   --blue: #1085c5;
+   --font-family: "Open Sans", sans-serif;
+   --second-family: "Neucha", sans-serif;
+   --h1: 72px;
+   --h2: 60px;
+   --h3: 34px;
+   --line-height-title: 1.2em;
+}
+
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+ul {
+   list-style-type: none;
 }
 
 body {
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.6em;
+   color: var(--dark);
+}
+
+.section {
+   padding: 100px 0;
+}
+
+.container {
+   max-width: 1110px;
+   margin: 0 auto;
+}
+
+.header {
+   position: relative;
+   background-color: var(--light);
+}
+
+.header::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url(../img/background.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   opacity: 0.1;
+}
+
+.header__inner {
+   position: relative;
+}
+
+.header__img {
+   position: absolute;
+   top: -45px;
+   right: -166px;
+}
+
+.header__title {
+   font-family: var(--second-family);
+   font-size: var(--h1);
+   line-height: 100%;
+   font-weight: 400;
+
+   position: relative;
+   z-index: 2;
+}
+
+.header__title span {
+   display: inline-block;
+   padding: 6px 0;
+   color: var(--primary);
+   line-height: var(--line-height-title);
+}
+
+.header__content {
+   margin-top: 201px;
+   display: flex;
+   align-items: start;
+   gap: 30px;
+}
+
+.header__content div {
+   width: 540px;
+}
+
+.header__content-text1 {
+   margin-bottom: 13px;
+}
+
+.header__content-text2 {
+   margin-bottom: 40px;
+}
+
+.header__btn {
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.6em;
+   text-transform: uppercase;
+   padding: 12px 24px;
+   display: inline-block;
+   color: var(--white);
+   background-color: var(--primary);
+}
+
+
+
+
+
+/*body {
    margin: 0;
    box-sizing: border-box;
    font-family: "Open Sans", sans-serif;
@@ -362,8 +484,6 @@ form {
 }
 
 .footer-email::placeholder {
-   /* font-family: "Open Sans", sans-serif;
-   font-weight: 400; */
    font-size: 13px;
    color: #757575;
 }
